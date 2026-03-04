@@ -39,7 +39,7 @@ def generar_pdf(df, total):
     pdf.cell(155, 10, "Total: ", border='LTB', align='R')
     pdf.cell(35, 10, f"${total:.2f}", border=1, align='R', ln=True)
     
-    return pdf.output(dest='S').encode('latin-1')
+    return pdf.output()
 
 st.title("🔧 Editor de Informes de Gastos")
 
